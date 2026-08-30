@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>スクリーンタイム For One サポート</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.8; max-width: 720px; margin: 0 auto; padding: 24px 20px 64px;
+    color: #1a1a1a; background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8e8; background: #121212; }
+    a { color: #6db3f2; }
+    .urgent { background: #2a2118; border-color: #6b5426; }
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 0.2em; }
+  h2 { font-size: 1.15rem; margin-top: 2em; border-bottom: 1px solid #8884; padding-bottom: 0.3em; }
+  .lead { color: #8a8a8a; }
+  ul { padding-left: 1.4em; }
+  li { margin-bottom: 0.4em; }
+  a { color: #2b6ea8; }
+  .urgent {
+    margin-top: 2em; padding: 4px 20px 16px; background: #fff8ec;
+    border: 1px solid #e8d5ad; border-radius: 12px;
+  }
+  .urgent h2 { margin-top: 1em; border-bottom: none; padding-bottom: 0; }
+  .qa { margin-bottom: 1.6em; }
+  .q { font-weight: 600; margin-bottom: 0.3em; }
+  footer { margin-top: 3em; font-size: 0.85rem; color: #8a8a8a; border-top: 1px solid #8884; padding-top: 1em; }
+</style>
+</head>
+<body>
+<h1>スクリーンタイム For One サポート</h1>
+<p class="lead">スクリーンタイムのパスコードを自分で決めて、そのあと意図的に忘れるためのアプリです。忘れたパスコードは、散歩と謎解きを経て取り出せます。</p>
+
+<div class="urgent">
+<h2>いま、パスコードが分からなくて困っている方へ</h2>
+<p>メールのお返事をお待ちいただかなくても、ご自身でリセットできます。iPhone の「設定」→「スクリーンタイム」→「スクリーンタイムパスコードを変更」→「パスコードをお忘れですか？」と進み、パスコードを設定したときに登録した復旧用Apple ID を入力してください。</p>
+<p><strong>順番にご注意ください。</strong>先に復旧用Apple ID でリセットし、そのあとでアプリを開いて、パスコードを設定し直してください。逆にすると、アプリの知らない数字で制限がかかったままになります。</p>
+<p>復旧用Apple ID を登録していない場合、この方法は使えません。その場合、iPhone を初期化する以外に手がなくなります。開発者の側から解除することもできません。</p>
+</div>
+
+<h2>よくある質問</h2>
+
+<div class="qa">
+  <p class="q">Q. 機種変更をしたら「パスコードを読み出せません」と出ます。</p>
+  <p>A. 暗号を解くための鍵が、まだ新しい iPhone に届いていない可能性があります。「設定」→ ご自身の名前 → iCloud →「パスワードとキーチェーン」がオンになっているか確かめて、しばらくお待ちください。アプリの画面にある「もう一度確かめる」を押すと、その場で読み直します。</p>
+  <p><strong>このとき、パスコードを設定し直さないでください。</strong>待てば読めるものを、上書きして読めなくしてしまいます。アプリの側でも、鍵が届いていない間は新しい数字を決められないようにしています。</p>
+</div>
+
+<div class="qa">
+  <p class="q">Q. アプリを削除したら、預けたパスコードはどうなりますか？</p>
+  <p>A. iPhone の中に保管したぶんは消えます。ご自身の iCloud に置いた控えと鍵は残ることがあるため、アプリを入れ直すとそのまま読めることがあります。ただし確実ではありません。最後の備えは、やはり復旧用Apple ID です。</p>
+</div>
+
+<div class="qa">
+  <p class="q">Q. 散歩をしているのに、歩数が増えません。</p>
+  <p>A. 「設定」→「プライバシーとセキュリティ」→「モーションとフィットネス」で、このアプリがオンになっているか確かめてください。歩数は iPhone 内蔵の歩数計で数えているため、iPhone を身につけて歩く必要があります（Apple Watch だけでは数えられません）。</p>
+  <p>歩数を数えられない場合でも、取り出せなくなることはありません。歩数の条件を外し、時間だけで散歩を終えられるようにしています。</p>
+</div>
+
+<div class="qa">
+  <p class="q">Q. 謎解きが解けません。先へ進めなくなりますか？</p>
+  <p>A. なりません。しばらく考えると「ヒント」が、そこからさらに待つと「答えを見る」が使えるようになります。答えを見た問題は解けた数に入らず、別の問題が1問増えるだけです。解けないせいでパスコードを取り出せなくなることは、決してありません。</p>
+</div>
+
+<div class="qa">
+  <p class="q">Q. 取り出しの条件（歩く時間・謎解きの難しさ）を変えたいのですが、見当たりません。</p>
+  <p>A. 条件を変えられるのは、パスコードを取り出したあと（次に忘れ直すまでの間）と、最初の忘却セッションを終えた直後だけです。いつでも変えられると、取り出したくなった時に条件をゆるめてしまえるためです。</p>
+</div>
+
+<div class="qa">
+  <p class="q">Q. 買い切りですか？ アプリ内課金はありますか？</p>
+  <p>A. 買い切りの有料アプリです。アプリ内課金も、月額の支払いもありません。購入できているかどうかの確認をパスコードの取り出しに挟んでいないため、通信ができない場所でも、いつでも取り出せます。</p>
+</div>
+
+<h2>お問い合わせ</h2>
+<p>ご質問・ご要望・不具合のご報告は、下記メールまでお気軽にご連絡ください。できるだけ早く返信いたします。</p>
+<p>メール：<a href="mailto:tomoshibi402@gmail.com">tomoshibi402@gmail.com</a></p>
+<p>お問い合わせの際は、<strong>お使いの機種・iOS のバージョン・困っている状況</strong>を添えていただけると、解決がスムーズです。</p>
+
+<h2>プライバシー</h2>
+<p>本アプリは個人情報を収集しません。お預かりしたパスコードは暗号化したうえで、お使いの端末とご自身の iCloud だけに保管しており、開発者が見ることはできません。詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+
+<footer>
+© 2026 灯火project
+</footer>
+</body>
+</html>
