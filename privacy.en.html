@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Screen Time for One Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.8; max-width: 720px; margin: 0 auto; padding: 24px 20px 64px;
+    color: #1a1a1a; background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8e8; background: #121212; }
+    a { color: #6db3f2; }
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 0.2em; }
+  h2 { font-size: 1.15rem; margin-top: 2em; border-bottom: 1px solid #8884; padding-bottom: 0.3em; }
+  .meta { color: #8a8a8a; font-size: 0.9rem; }
+  ul { padding-left: 1.4em; }
+  li { margin-bottom: 0.4em; }
+  a { color: #2b6ea8; }
+  footer { margin-top: 3em; font-size: 0.85rem; color: #8a8a8a; border-top: 1px solid #8884; padding-top: 1em; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p class="meta">Screen Time for One / Last updated: August 30, 2026</p>
+
+<p>Tomoshibi (the "Developer"), the developer of Screen Time for One (the "App"), respects the privacy of the App's users. This policy explains how the App handles user information.</p>
+
+<h2>1. Our basic position</h2>
+<p>The App does not collect any personal information. The Developer does not use any servers, and the App never transmits user information to the Developer. All data the App handles is stored on the user's own device or in the user's own iCloud account.</p>
+
+<h2>2. About the passcode we hold for you</h2>
+<p>The App holds the four-digit Screen Time passcode that the user has set. This is so that the user can still retrieve it after deliberately forgetting it.</p>
+<p>The App encrypts the four digits (AES-GCM) and stores them in the following places:</p>
+<ul>
+  <li>On this iPhone (the keychain)</li>
+  <li>In the user's own iCloud (a backup copy, in case of a new device or a reinstall)</li>
+  <li>The key used to decrypt it is stored in the user's own iCloud Keychain</li>
+</ul>
+<p>All of this stays within Apple's infrastructure and is never sent to any server operated by the Developer. The Developer cannot see the user's passcode.</p>
+
+<h2>3. About your Screen Time settings</h2>
+<p>The App does not operate the iPhone's Screen Time feature itself. Setting, changing, and removing restrictions is done entirely by the user in the Settings app. The App does not use the iOS Screen Time API and does not obtain the user's screen time or usage data.</p>
+
+<h2>4. About step counts</h2>
+<p>The walk that is part of the retrieval process uses the iPhone's built-in pedometer (Motion &amp; Fitness). Only the steps taken after the user starts the walk are counted. Step counts are used solely on the device to determine whether the walk is complete, and are never transmitted externally.</p>
+<p>The App does not read from or write to Health (HealthKit). If permission to use step counts is not granted, the App drops the step requirement and the walk can be completed using time alone.</p>
+
+<h2>5. Other data stored on your device</h2>
+<p>The App stores the following data, which it needs in order to work:</p>
+<ul>
+  <li>Progress within a forgetting session, a walk, or a puzzle</li>
+  <li>Retrieval conditions (walking time and puzzle difficulty)</li>
+  <li>A record of walks completed, and the number of times and dates the passcode has been retrieved</li>
+</ul>
+<p>This data is stored on the device, and some of it is also stored in the user's own iCloud so that it carries over to a new device or a reinstall. None of it contains personally identifying information, and none of it is sent to the Developer.</p>
+
+<h2>6. About notifications</h2>
+<p>The notification that tells the user their walk is over is a local notification generated entirely on the device. No information is sent externally for notifications.</p>
+
+<h2>7. About iCloud</h2>
+<p>Data the App stores in iCloud is kept within the user's own Apple account. It is under Apple's control, and the Developer cannot access it.</p>
+
+<h2>8. About deleting data</h2>
+<p>Deleting the App removes the data stored on the device.</p>
+<p>However, the backup copy and the encryption key stored in iCloud may remain in the user's own iCloud account after the App is deleted. This is by design, so that the passcode is not lost when moving to a new device or reinstalling. This data is likewise under Apple's control, and the Developer cannot obtain it.</p>
+
+<h2>9. About purchases</h2>
+<p>The App is a paid app with a one-time purchase. Purchases are handled through Apple's App Store, and payment information is managed by Apple. The Developer does not receive the user's payment information.</p>
+
+<h2>10. Third parties, analytics, and advertising</h2>
+<p>The App uses no third-party services that transmit user information externally, including analytics tools, advertising, and crash reporting. The Developer does not provide or sell user information to third parties.</p>
+
+<h2>11. Children's privacy</h2>
+<p>The App does not collect personal information in the first place, and it does not knowingly collect personal information from children.</p>
+
+<h2>12. Changes to this policy</h2>
+<p>This policy may be revised as needed. Any significant change will be announced on this page.</p>
+
+<h2>13. Contact</h2>
+<p>For questions about this policy or the App, please feel free to contact us at:<br>
+Email: <a href="mailto:tomoshibi402@gmail.com">tomoshibi402@gmail.com</a></p>
+
+<footer>
+© 2026 Tomoshibi project / <a href="./privacy.html">日本語</a>
+</footer>
+</body>
+</html>
